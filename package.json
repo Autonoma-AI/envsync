@@ -1,6 +1,6 @@
 {
   "name": "@autonoma-ai/occultus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An NPM package that retrieves secrets from Google Cloud Secret Manager and writes them to an .env file.",
   "main": "index.js",
   "scripts": {
