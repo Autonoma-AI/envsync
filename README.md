@@ -20,7 +20,7 @@ npm install occultus --save-dev
 
 ## ⚙️ Configuration
 
-Add the following configuration in your `package.json` file:
+Add the following configuration in your `package.json` file::
 
 ```json
 "occultus": {
