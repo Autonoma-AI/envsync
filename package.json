@@ -1,23 +1,33 @@
 {
-  "name": "@autonoma-ai/occultus",
-  "version": "1.0.0",
-  "description": "An NPM package that retrieves secrets from Google Cloud Secret Manager and writes them to an .env file.",
-  "main": "index.js",
+  "name": "@autonoma-ai/envsync",
+  "version": "2.0.0",
+  "description": "An NPM package that retrieves secrets from AWS Secrets Manager and writes them to an .env file.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Autonoma-AI/occultus.git"
+    "url": "git+https://github.com/Autonoma-AI/envsync.git"
   },
   "author": "Simon Mullen <sfmullen@autonoma.app> (https://github.com/sfmullen)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Autonoma-AI/occultus/issues"
+    "url": "https://github.com/Autonoma-AI/envsync/issues"
   },
-  "homepage": "https://github.com/Autonoma-AI/occultus#readme",
+  "homepage": "https://github.com/Autonoma-AI/envsync#readme",
   "dependencies": {
-    "@google-cloud/secret-manager": "^5.6.0"
+    "@aws-sdk/client-secrets-manager": "^3.1045.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "typescript": "^6.0.3"
+  }
 }
